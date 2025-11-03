@@ -1,10 +1,14 @@
+function Header() {
+  return (
+    <header>
+      <img src="src/assets/react.svg" alt="react logo" />
+    </header>
+  )
+}
 
-function App() {
+function MainContent() {
   return (
     <main>
-      <header>
-        <img src="src/assets/react.svg" alt="react logo" />
-      </header>
       <h1>Fun facts about React</h1>
       <ol>
         <li>Was first released in 2013</li>
@@ -13,10 +17,25 @@ function App() {
         <li>Is maintained by Meta</li>
         <li>Powers thousands of enterprise apps, including mobile apps</li>
       </ol>
-      <footer>
-        <small>© 2025 Makam's development. All rights reserved.</small>
-      </footer>
     </main>
+  )
+}
+
+function Footer() {
+  return (
+    <footer>
+      <small>© 2025 Makam's development. All rights reserved.</small>
+    </footer>
+  )
+}
+
+function App() {
+  return (
+    <>
+      <Header />
+      <MainContent />
+      <Footer />
+    </>
   );
 }
 
